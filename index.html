@@ -1,27 +1,40 @@
-<meta charset="UTF-8">
-<div>
-    <label for="Title"><h2>Jogo do tiro ao Alvo!</h2></label>
-    <label for="Title"><h4>Objetivos do jogo: Acertar no centro do alvo, escolha uma dificuldade para começar!</h4></label>
-</div>
+<!DOCTYPE html>
 
-<div>
-    <script>
-        var nomeDoJogador = prompt("Player 1: Para comerçar, digite o seu nome!");
-        document.write("Player 1: " + nomeDoJogador);
-    </script>
-</div>
-
-<div>
-    <canvas id="Game Alvo" width="800" height="500"></canvas>
-    <select id="escolher">
-        <option value="">--Selecione a Dificuldade--</option>
-        <option value="facil">Fácil</option>
-        <option value="medio">Médio</option>
-        <option value="dificil">Difícil</option>
-        <option value="god">God</option>
-    </select>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jogo do Tiro ao Alvo</title>
+    </head>
     
-    <button id="selecionar">Selecionar</button>
-</div>
+    <body>
 
-<script type="text/javascript" src="script.js"></script>
+        <div>
+            <label for="Title"><h2>Jogo do tiro ao Alvo!</h2></label>
+            <p>Objetivos do jogo: Acertar no centro do alvo, escolha uma dificuldade para começar!</p>
+        </div>
+        
+        <div>
+            <script>
+                var nomeDoJogador = prompt("Player 1: Para comerçar, digite o seu nome!");
+                document.write("Player 1: " + nomeDoJogador);
+            </script>
+        </div>
+        
+        <div>
+            <canvas id="Game Alvo" width="800" height="500"></canvas>
+            <select id="escolher">
+                <option value="">--Selecione a Dificuldade--</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+                <option value="god">God</option>
+            </select>
+            <button id="selecionar">Selecionar</button>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+
+</html>
+
